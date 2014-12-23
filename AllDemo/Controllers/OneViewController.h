@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OneViewController.h
 //  AllDemo
 //
 //  Created by suzq on 14/12/23.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface OneViewController : UIViewController
 
 @end
-

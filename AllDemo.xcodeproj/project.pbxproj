@@ -14,6 +14,8 @@
 		FC94D9211A494C820067988E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC94D9201A494C820067988E /* Images.xcassets */; };
 		FC94D9241A494C820067988E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC94D9221A494C820067988E /* LaunchScreen.xib */; };
 		FC94D9301A494C820067988E /* AllDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC94D92F1A494C820067988E /* AllDemoTests.m */; };
+		FC94D93C1A4959D00067988E /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC94D93B1A4959D00067988E /* OneViewController.m */; };
+		FC94D93F1A4959E30067988E /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC94D93E1A4959E30067988E /* TwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		FC94D9291A494C820067988E /* AllDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC94D92E1A494C820067988E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC94D92F1A494C820067988E /* AllDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllDemoTests.m; sourceTree = "<group>"; };
+		FC94D93A1A4959D00067988E /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		FC94D93B1A4959D00067988E /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		FC94D93D1A4959E30067988E /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		FC94D93E1A4959E30067988E /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				FC94D9181A494C820067988E /* AppDelegate.m */,
 				FC94D91A1A494C820067988E /* ViewController.h */,
 				FC94D91B1A494C820067988E /* ViewController.m */,
+				FC94D9391A4959A50067988E /* Controllers */,
 				FC94D91D1A494C820067988E /* Main.storyboard */,
 				FC94D9201A494C820067988E /* Images.xcassets */,
 				FC94D9221A494C820067988E /* LaunchScreen.xib */,
@@ -117,6 +124,17 @@
 				FC94D92E1A494C820067988E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC94D9391A4959A50067988E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC94D93A1A4959D00067988E /* OneViewController.h */,
+				FC94D93B1A4959D00067988E /* OneViewController.m */,
+				FC94D93D1A4959E30067988E /* TwoViewController.h */,
+				FC94D93E1A4959E30067988E /* TwoViewController.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +240,8 @@
 				FC94D91C1A494C820067988E /* ViewController.m in Sources */,
 				FC94D9191A494C820067988E /* AppDelegate.m in Sources */,
 				FC94D9161A494C820067988E /* main.m in Sources */,
+				FC94D93F1A4959E30067988E /* TwoViewController.m in Sources */,
+				FC94D93C1A4959D00067988E /* OneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AllDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AllDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
