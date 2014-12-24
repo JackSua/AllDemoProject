@@ -1,42 +1,22 @@
 //
-//  OneViewController.m
+//  BaseViewController.m
 //  AllDemo
 //
-//  Created by suzq on 14/12/23.
+//  Created by suzq on 14/12/24.
 //  Copyright (c) 2014年 suzq. All rights reserved.
 //
 
-#import "OneViewController.h"
+#import "BaseViewController.h"
 
-typedef double (^resultBlock)(double);
-
-@interface OneViewController ()<UINavigationControllerDelegate>
+@interface BaseViewController ()
 
 @end
 
-@implementation OneViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //self.title = @"BlockTest";
-    [self doBlockTest];
-    
-}
-
-- (void)doBlockTest
-{
-    resultBlock rstBlock = ^double(double x){
-        return x+1;
-    };
-    double result = rstBlock(4);
-    NSLog(@"result = %f",result);
-    
-    int(^rstblock1)(int) = ^int(int x){
-        return x+2;
-    };
-    NSLog(@"rstblock1 = %d",rstblock1(4));
-    
 }
 
 - (void)didReceiveMemoryWarning {

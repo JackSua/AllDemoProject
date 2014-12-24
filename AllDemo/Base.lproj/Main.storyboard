@@ -67,7 +67,6 @@
         <!--详细-->
         <scene sceneID="oNU-fx-gbP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cNh-rb-ha5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SJF-mS-q7A" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EDL-T5-PIm"/>
@@ -80,6 +79,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="详细" id="2Zr-8A-f5D"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNh-rb-ha5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1664" y="810"/>
         </scene>

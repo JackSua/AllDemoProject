@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "OneViewController.h"
-#import "TwoViewController.h"
+#import "BaseViewController.h"
+//#import "OneViewController.h"
+//#import "TwoViewController.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.menuTitles = [NSArray arrayWithObjects:@"1",@"2", nil];
+    self.menuTitles = [NSArray arrayWithObjects:@"blockTest",@"2", nil];
     self.menuClassNames = [NSArray arrayWithObjects:@"OneViewController",@"TwoViewController", nil];
 }
 
@@ -49,7 +50,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *className = self.menuClassNames[indexPath.row];
-    UIViewController *subVC = [[NSClassFromString(className) alloc] init];
+    BaseViewController *subVC = [[NSClassFromString(className) alloc] init];
+    subVC.title = self.menuTitles[indexPath.row];
     [self.navigationController pushViewController:(UIViewController *)subVC animated:YES];
 }
 

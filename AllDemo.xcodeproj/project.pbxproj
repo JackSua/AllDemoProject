@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0695A21A4AB0B6006325D0 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0695A11A4AB0B6006325D0 /* BaseViewController.m */; };
 		FC94D9161A494C820067988E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC94D9151A494C820067988E /* main.m */; };
 		FC94D9191A494C820067988E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC94D9181A494C820067988E /* AppDelegate.m */; };
 		FC94D91C1A494C820067988E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC94D91B1A494C820067988E /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0695A01A4AB0B6006325D0 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FC0695A11A4AB0B6006325D0 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		FC94D9101A494C820067988E /* AllDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC94D9141A494C820067988E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC94D9151A494C820067988E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				FC94D93B1A4959D00067988E /* OneViewController.m */,
 				FC94D93D1A4959E30067988E /* TwoViewController.h */,
 				FC94D93E1A4959E30067988E /* TwoViewController.m */,
+				FC0695A01A4AB0B6006325D0 /* BaseViewController.h */,
+				FC0695A11A4AB0B6006325D0 /* BaseViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC94D91C1A494C820067988E /* ViewController.m in Sources */,
+				FC0695A21A4AB0B6006325D0 /* BaseViewController.m in Sources */,
 				FC94D9191A494C820067988E /* AppDelegate.m in Sources */,
 				FC94D9161A494C820067988E /* main.m in Sources */,
 				FC94D93F1A4959E30067988E /* TwoViewController.m in Sources */,
@@ -436,6 +442,7 @@
 				FC94D9351A494C820067988E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC94D9361A494C820067988E /* Build configuration list for PBXNativeTarget "AllDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +451,7 @@
 				FC94D9381A494C820067988E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
